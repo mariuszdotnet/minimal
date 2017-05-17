@@ -10,7 +10,7 @@ Last week during Build 2017 Microsoft announced the [Azure Cloud Shell](https://
 
 Cloud Shell enables access to a browser-based command-line experience built with Azure management tasks in mind. Leverage Cloud Shell to work untethered from a local machine in a way only the cloud can provide.
 
-This cool because now you canto use the [Azure CLI 2.0](https://docs.microsoft.com/en-us/cli/azure/overview) directly from the portal.
+This cool because now you can use the [Azure CLI 2.0](https://docs.microsoft.com/en-us/cli/azure/overview) directly from the portal.
 
 My favororite feature is that you can actually have a stateful storage drive wthin Azure Store.
 
