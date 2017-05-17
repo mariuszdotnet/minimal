@@ -14,7 +14,7 @@ My favororite feature is that you can actually have a stateful storage drive wth
 
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Azure Cloud Shell")
 
-One thing I wanted to do after I was done playing was to reset my **"clouddrive"** so it's nice and clean. To do this inside cloud shell, run `clouddrive unmount` which will reset your account back and start from scratch.
+One thing I wanted to do after I was done playing was to reset my "clouddrive" so it's nice and clean. To do this inside cloud shell, run **`clouddrive unmount`** which will reset your account back and start from scratch.
 
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Unmout Clouddrive")
 
