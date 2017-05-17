@@ -13,9 +13,10 @@ Cloud Shell enables access to a browser-based command-line experience built with
 My favororite feature is that you can actually have a stateful storage drive wthin Azure Store.
 
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Azure Cloud Shell")
+![Azure Cloud Shell]({{ site.url }}/assets/images/storage.png)
 
 One thing I wanted to do after I was done playing was to reset my "clouddrive" so it's nice and clean. To do this inside cloud shell, run **`clouddrive unmount`** which will reset your account back and start from scratch.
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Unmout Clouddrive")
+![Unmout Clouddrive]({{ site.url }}/assets/images/unmount.png)
 
 [back]({{ site.baseurl }}{% link index.md %})
