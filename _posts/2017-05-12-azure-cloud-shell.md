@@ -6,7 +6,7 @@ categories: Azure
 
 Last week during Build 2017 Microsoft announced the [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview) (Preview).
 
-#Browser-based Shell Experience
+# Browser-based Shell Experience
 
 Cloud Shell enables access to a browser-based command-line experience built with Azure management tasks in mind. Leverage Cloud Shell to work untethered from a local machine in a way only the cloud can provide.
 
