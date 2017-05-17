@@ -12,7 +12,7 @@ Cloud Shell enables access to a browser-based command-line experience built with
 
 This cool because now you can use the [Azure CLI 2.0](https://docs.microsoft.com/en-us/cli/azure/overview) directly from the portal.
 
-My favororite feature is that you can actually have a stateful storage drive wthin Azure Store.
+My favorite feature is that you can actually have a stateful storage drive wthin Azure Store.
 
 ![Azure Cloud Shell]({{ site.url }}/assets/images/storage.png)
 
