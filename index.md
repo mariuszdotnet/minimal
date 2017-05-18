@@ -3,7 +3,7 @@ layout: default
 ---
 
 <ul>
-  {% for post in site.posts | sort: 'title', 'first' %}
+  {% for post in site.posts reversed %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
       {{ post.excerpt }}
