@@ -3,8 +3,7 @@ layout: default
 ---
 
 <ul>
-  {{ site.pages | sort: 'title', 'last' }}
-  {% for post in site.posts %}
+  {% for post in site.posts | sort: 'title', 'last' %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
       {{ post.excerpt }}
