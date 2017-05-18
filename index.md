@@ -6,7 +6,7 @@ layout: default
   {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a> - ({{ post.date | date: "%m.%d.%Y" }})
-      {{ post.excerpt }}
+      <br/>{{ post.excerpt }}
     </li>
   {% endfor %}
 </ul>
