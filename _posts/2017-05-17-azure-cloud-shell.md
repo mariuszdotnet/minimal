@@ -3,8 +3,10 @@ layout: default
 title: "Azure Cloud Shell"
 date: 2017-05-17
 categories: Azure
-excerpt: Last week during Build 2017 Microsoft announced the [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview) (Preview).
+excerpt: Last week during Build 2017 Microsoft announced the Azure Cloud Shell (Preview).
 ---
+
+## {{page.title}}
 
 Last week during Build 2017 Microsoft announced the [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview) (Preview).
 
