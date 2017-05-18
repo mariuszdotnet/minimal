@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Azure Cloud Shell"
+date: 2017-05-17
 categories: Azure 
 ---
 

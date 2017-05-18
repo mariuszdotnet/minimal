@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "My Favorite Blogs"
+date: 2017-05-14
 categories: Azure 
 ---
 

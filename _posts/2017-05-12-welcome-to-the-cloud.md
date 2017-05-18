@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Welcome to the Cloud!"
+date: 2017-05-11
 categories: Azure 
 ---
 
