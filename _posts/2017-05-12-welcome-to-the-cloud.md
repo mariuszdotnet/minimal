@@ -2,9 +2,12 @@
 layout: default
 title: "Welcome to the Cloud!"
 date: 2017-05-11
-categories: Azure 
+categories: Azure
+excerpt: For all your cloud needs check out Microsoft Azure...
 ---
 
-For all your cloud needs check out [Azure](https://azure.microsoft.com)!
+## {{page.title}}
+
+For all your cloud needs check out Microsoft [Azure](https://azure.microsoft.com)!
 
 [back]({{ site.baseurl }}{% link index.md %})

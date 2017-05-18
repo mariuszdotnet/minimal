@@ -2,8 +2,11 @@
 layout: default
 title: "My Favorite Blogs"
 date: 2017-05-14
-categories: Azure 
+categories: Azure
+excerpt: This is a list in no particular order of some of my favorite IT blogs...
 ---
+
+## {{page.title}}
 
 This is a list in no particular order of some of my favorite IT blogs:
 
