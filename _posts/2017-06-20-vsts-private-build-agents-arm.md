@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "VSTS Private Build Agents with ARM"
+title: "VSTS Private Agents with ARM"
 date: 2017-06-20
 categories: Azure
 excerpt: Coming soon...
@@ -8,9 +8,9 @@ excerpt: Coming soon...
 
 ## {{page.title}}
 
-My customers love to use [VSTS]( https://www.visualstudio.com/team-services/) to enable their DevOps capabilities, however in some cases due to security requirements they are not able to use the Hosted Agents.  In that case the other alternative is to use Private Agents, for detailed description on differences between the two configurations checkout the [blog]( https://www.visualstudio.com/en-us/docs/build/concepts/agents/agents).
+My customers love to use [VSTS](https://www.visualstudio.com/team-services/) to enable their DevOps capabilities, however in some cases due to security requirements they are not able to use the Hosted Agents.  In that case the other alternative is to use Private Agents, for detailed description on differences between the two configurations checkout the [blog](https://www.visualstudio.com/en-us/docs/build/concepts/agents/agents).
 
-In this blog we’ll see on how to automagically deploy a VSTS Private Agent with [Azure Resource Manager]( https://docs.microsoft.com/en-ca/azure/azure-resource-manager/resource-group-overview) (ARM) and some PowerShell.
+In this blog we’ll see on how to automagically deploy a VSTS Private Agent with [Azure Resource Manager](https://docs.microsoft.com/en-ca/azure/azure-resource-manager/resource-group-overview) (ARM) and some PowerShell.
 
 The example does the following:
 -	Creates an azure VM based on a galley image
@@ -18,7 +18,7 @@ The example does the following:
 -	Installs and configures the VSTS extension
 -	Registers the Private Agent with an existing VSTS Agent Pool
 
-The scripts referenced below are based on [A Visual Studio based Visual Studio Team Services (VSTS) Build Agent Vm]( https://github.com/Azure/azure-quickstart-templates/tree/master/visual-studio-vstsbuildagent-vm), however I’ve made improvements and simplifications to make it more enterprise ready.
+The scripts referenced below are based on [A Visual Studio based Visual Studio Team Services (VSTS) Build Agent Vm](https://github.com/Azure/azure-quickstart-templates/tree/master/visual-studio-vstsbuildagent-vm), however I’ve made improvements and simplifications to make it more enterprise ready.
 
 Some of the improvements/modification are:
 -	Removed public IP from VM template
@@ -31,11 +31,11 @@ Some of the improvements/modification are:
 -	Azure Subscription and permissions to create Azure VMs
 -	Existing vNet and subnet in your Azure Subscription (private address space)
 -	VSTS Account
--	[Personal Access Token]( https://www.visualstudio.com/en-us/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate) to register the Private Agent with VSTS
--	Existing VSTS [Agent Pool]( https://www.visualstudio.com/en-us/docs/build/concepts/agents/pools-queues) to register your Private Agent
+-	[Personal Access Token](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate) to register the Private Agent with VSTS
+-	Existing VSTS [Agent Pool](https://www.visualstudio.com/en-us/docs/build/concepts/agents/pools-queues) to register your Private Agent
 
 ### Step 1 – Configure Parameters for the ARM Template
-All the required scripts can be found in [this GitHub repo]( https://github.com/mariuszdotnet/vsts-hosted-agents).  Start by cloning or forking the repo.  The first file you need to modify is the “azuredeploy.parameters.json” file.
+All the required scripts can be found in [this GitHub repo](https://github.com/mariuszdotnet/vsts-hosted-agents).  Start by cloning or forking the repo.  The first file you need to modify is the “azuredeploy.parameters.json” file.
 
  
 ![ARM Parameters]({{ site.url }}/assets/images/vsts-agent-fig1.png)
