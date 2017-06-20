@@ -3,7 +3,7 @@ layout: default
 title: "VSTS Private Agents with ARM"
 date: 2017-06-20
 categories: Azure
-excerpt: Coming soon...
+excerpt: My customers love to use VSTS to enable their DevOps capabilities...
 ---
 
 ## {{page.title}}
