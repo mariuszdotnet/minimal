@@ -22,20 +22,20 @@ The scripts referenced below are based on [A Visual Studio based Visual Studio T
 
 Some of the improvements/modification are:
 -	Removed public IP from VM template
--	Used the latest Azure gallery image for Windows Server 2016 gallery with VS 2017 community edition
+-	Used the latest Azure gallery image for Windows Server 2016 with VS 2017 community edition
 -	Updated ARM APIs to use the latest versions
 -	Updated the template to use an existing vNet and subnet (private address space)
 -	Updated the VM to use managed disks (no storage account required)
 
 ### Prerequisites
 -	An Azure Subscription and an account with permissions to create Azure VMs
--	A vNet and subnet in your Azure Subscription (private address space)
+-	An existing vNet and subnet in your Azure Subscription (private address space)
 -	A VSTS Account
 -	A [Personal Access Token](https://www.visualstudio.com/en-us/docs/setup-admin/team-services/use-personal-access-tokens-to-authenticate) to register the Private Agent with VSTS
 -	An existing VSTS [Agent Pool](https://www.visualstudio.com/en-us/docs/build/concepts/agents/pools-queues) to register your Private Agent
 
 ### Step 1 – Configure the Parameters for the ARM Template
-All the required scripts can be found in [this GitHub repo](https://github.com/mariuszdotnet/vsts-hosted-agents). Start by cloning or forking the repo. The first file you need to modify is the “azuredeploy.parameters.json” file.
+All the required scripts can be found in [this GitHub repo](https://github.com/mariuszdotnet/vsts-hosted-agents). Start by cloning or forking the repo. The first file you need to modify is the `azuredeploy.parameters.json` file.
 
  
 ![ARM Parameters]({{ site.url }}/assets/images/vsts-agent-fig1.png)
