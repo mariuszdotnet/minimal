@@ -36,12 +36,11 @@ Some of the improvements/modification are:
 
 ### Step 1 – Configure the Parameters for the ARM Template
 All the required scripts can be found in [this GitHub repo](https://github.com/mariuszdotnet/vsts-hosted-agents). Start by cloning or forking the repo. The first file you need to modify is the [`azuredeploy.parameters.json`](https://github.com/mariuszdotnet/vsts-hosted-agents/blob/master/azuredeploy.parameters.json) file.
-
  
 ![ARM Parameters]({{ site.url }}/assets/images/vsts-agent-fig1.png)
 
 ### Step 2 – Execute the PowerShell Script to run the ARM Template
-Open your favorite editor and run the “deploy.ps1” script. The script does a few basic things:
+Open your favorite editor and run the [`deploy.ps1`](https://github.com/mariuszdotnet/vsts-hosted-agents/blob/master/deploy.ps1) script. The script does a few basic things:
 -	Sets the required variables
 -	Logs in to Azure
 -	Selects the right Azure Subscription
@@ -51,15 +50,14 @@ Open your favorite editor and run the “deploy.ps1” script. The script does a
  
 ![ARM Template]({{ site.url }}/assets/images/vsts-agent-fig2.png)
 
-The ARM Template “azuredeploy.json” file does the following:
+The ARM Template [`azuredeploy.json`](https://github.com/mariuszdotnet/vsts-hosted-agents/blob/master/azuredeploy.json) file does the following:
 -	Creates the Azure VM and deploys it into the existing vNet and subnet you provided
--	Executes the custom script extension which calls the “installvstsagent.ps1” file that does all the heavy lifting.  It downloads the latest agent, installs the agent, configures the agent and registers it with the existing VSTS Pool you have specified in the ARM Template parameters file.
+-	Executes the custom script extension which calls the [`installvstsagent.ps1`](https://github.com/mariuszdotnet/vsts-hosted-agents/blob/master/installvstsagent.ps1) file that does all the heavy lifting.  It downloads the latest agent, installs the agent, configures the agent and registers it with the existing VSTS Pool you have specified in the ARM Template parameters file.
 
-Note: the script currently downloads the “installvstsagent.ps1” from a public GitHub URL.  To make it more secure you could get the file from an Azure Storage Account.  Also, all the parameters/secrets could be tokenized into the configuration file and/or retrieved from Azure Key Vault.
+**Note:** the script currently downloads the [`installvstsagent.ps1`](https://github.com/mariuszdotnet/vsts-hosted-agents/blob/master/installvstsagent.ps1) from a public GitHub URL.  To make it more secure you could get the file from an Azure Storage Account.  Also, all the parameters/secrets could be tokenized into the configuration file and/or retrieved from Azure Key Vault.
 
 Assuming everything funtions properly, in 5 to 10 minutes you should be able to see the registered Private Agent in your VSTS Agent Pool.
  
 ![Agent Pool with Private Agent]({{ site.url }}/assets/images/vsts-agent-fig3.png)
-
 
 [back]({{ site.baseurl }}{% link index.md %})
