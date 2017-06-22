@@ -35,7 +35,7 @@ Some of the improvements/modification are:
 -	An existing VSTS [Agent Pool](https://www.visualstudio.com/en-us/docs/build/concepts/agents/pools-queues) to register your Private Agent
 
 ### Step 1 – Configure the Parameters for the ARM Template
-All the required scripts can be found in [this GitHub repo](https://github.com/mariuszdotnet/vsts-hosted-agents). Start by cloning or forking the repo. The first file you need to modify is the `azuredeploy.parameters.json` file.
+All the required scripts can be found in [this GitHub repo](https://github.com/mariuszdotnet/vsts-hosted-agents). Start by cloning or forking the repo. The first file you need to modify is the [`azuredeploy.parameters.json`](https://github.com/mariuszdotnet/vsts-hosted-agents/blob/master/azuredeploy.parameters.json) file.
 
  
 ![ARM Parameters]({{ site.url }}/assets/images/vsts-agent-fig1.png)
