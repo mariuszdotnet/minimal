@@ -3,7 +3,7 @@ layout: default
 title: "Goodbye Jekyll, Welcome Back WordPress"
 date: 2017-08-26
 categories: Azure
-excerpt: oday I made the switch back from Jekyll] on github.io to WordPresshosted on an Azure...
+excerpt: Today I made the switch back from Jekyll] on github.io to WordPresshosted on an Azure...
 ---
 
 ## {{page.title}}
